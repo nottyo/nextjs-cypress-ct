@@ -12,6 +12,7 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 const injectNextDevServer = require('@cypress/react/plugins/next')
+const codeCoverageTask = require('@cypress/code-coverage/task')
 
 /**
  * @type {Cypress.PluginConfig}
@@ -23,5 +24,6 @@ module.exports = (on, config) => {
   if (config.testingType === 'component') {
     injectNextDevServer(on, config)
   }
+  codeCoverageTask(on, config)
   return config
 }
