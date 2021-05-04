@@ -14,4 +14,4 @@ yarn cypress open-ct
 ```
 
 ## Read Full documentation at this blog
-https://medium.com/@nottyo/4ea3ddb75e72
+https://medium.com/@nottyo/28fa311adda6
